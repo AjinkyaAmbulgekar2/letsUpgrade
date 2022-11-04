@@ -1,0 +1,31 @@
+Assignment 1 - Write a program to find those numbers which are divisible by 15 and multiple of 5, between 10 and 150
+
+=====> 
+
+Program ==>
+number=[]
+for x in range(10, 150):
+    if (x%15==0) and (x%5==0):
+        number.append(str(x))
+print (','.join(number))
+
+============ OUTPUT  =====>
+ 15,30,45,60,75,90,105,120,135
+
+
+Assignment 2 (Optional) - Write a python program to print 100 prime numbers and you should print "Hey Bro done!"
+
+========>
+
+Program ==>
+lower_value = int(input ("Enter the Lowest Range Value: "))  
+upper_value = int(input ("Enter the Upper Range Value: "))  
+ 
+for number in range (lower_value, upper_value + 1):  
+    if number > 1:  
+        for i in range (2, number):  
+            if (number % i) == 0:  
+                break  
+        else:  
+            print (number)  
+print("Hey Bro done!")
